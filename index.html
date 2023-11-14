@@ -2,12 +2,39 @@
 <html lang="en">
 
 <head>
-    <title>Sean MacDonald - Professional Portfolio</title>
+    <title>Javascript Quiz</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css"/>
 </head>
 
+<header>
+    <a href="#" id="highScore">View High Scores</a>
+    <a id="timer">Time Left: 60s</a>
+</header>
+
 <body>
+    <div id="quiz-container">
+        <h1>Javascript Quiz</h1>
+        <p>Test your knowledge and skill of JavaScript! Choose wisely and you will forever be cemented in JavaScript lore. Choose poorly...... </p>
+        <button id="start-btn" onclick="startQuiz()">Start Quiz</button>
+    </div>
+
+    <div id="question-container" style="display:none;">
+        <p id="question"></p>
+        <div id="choices"></div>
+        <div id="answer"></div>
+    </div>
+    
+    <div id="score-container">
+        <p id="game-over"></p>
+        <p id="final-score"></p>
+        <label for="initials">Enter your initials (max 3 letters):</label>
+        <input type="text" id="initials" maxlength="3">
+        <button onclick="saveScore()">Save Score</button>
+    </div>
+   
+  <script src="./assets/js/script.js"></script>
+
 </body>
 </html>
