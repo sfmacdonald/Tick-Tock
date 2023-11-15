@@ -23,15 +23,14 @@ header {
   }
 
 /* body */
-body, .quiz-container, .question-container {
+body, .quiz-container, .question-container, .high-scores-container {
     font-family: Arial, sans-serif;
     text-align: center;
     font-size: large;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 30vh;
-    margin: 0;
+    margin-top: 50px;
     padding: 0;
   }
 
@@ -50,13 +49,14 @@ body, .quiz-container, .question-container {
   }
 
 button {
-    background-color: rgb(157, 20, 157);
+    background-color: black;
+    color: white;
     block-size: auto;
     font-size: large;
 }
 
 button:hover {
-    background-color:rgb(211, 84, 211);
+    background-color:rgb(157, 20, 157);
 }
 
 .answer {
@@ -65,5 +65,13 @@ button:hover {
 
 #score-container {
     display: none;
-    margin-top: 20px;
+    position: absolute;
+    margin-top: 50px;
+}
+
+#btn-container {
+    display: none;
+    position: relative;
+    margin-top: 50px;
+    padding: 0;
 }

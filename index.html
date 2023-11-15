@@ -31,7 +31,15 @@
         <p id="final-score"></p>
         <label for="initials">Enter your initials (max 3 letters):</label>
         <input type="text" id="initials" maxlength="3">
-        <button onclick="saveScore()">Save Score</button>
+        <button id="save-btn" onclick="saveScore()">Save Score</button>
+        <button id="retry-btn" onclick="tryAgain()">Try Quiz Again</button>
+    </div>
+
+    <div id="high-scores-container" style="display:none;">
+    </div>
+    <div id="btn-container" style="display:none;">
+        <button id="clear-btn" onclick="clearScores()">Clear Scores</button>
+        <button id="retry-btn" onclick="tryAgain()">Try Quiz Again</button>
     </div>
    
   <script src="./assets/js/script.js"></script>
