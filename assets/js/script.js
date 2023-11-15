@@ -1,24 +1,29 @@
 var questions = [
     {
-      question: "What is the capital of France?",
-      choices: ["Paris", "London", "Berlin", "Madrid"],
-      correctAnswer: "Paris"
+      question: "Commonly used data types do NOT include _____.",
+      choices: ["strings", "booleans", "alerts", "numbers"],
+      correctAnswer: "alerts"
     },
     {
-      question: "What is the capital of Germany?",
-      choices: ["Paris", "London", "Berlin", "Madrid"],
-      correctAnswer: "Berlin"
+      question: "The condition in an if / else statement is enclosed with _____.",
+      choices: ["quotes", "curly brackets", "parenthesis", "square brackets"],
+      correctAnswer: "parenthesis"
     },
     {
-      question: "What is the capital of England?",
-      choices: ["Paris", "London", "Berlin", "Madrid"],
-      correctAnswer: "London"
+      question: "Arrays in JavaScript can be used to store _____.",
+      choices: ["numbers and strings", "other arrays", "booleans", "all of the above"],
+      correctAnswer: "all of the above"
     },
     {
-      question: "What is the capital of Spain?",
-      choices: ["Paris", "London", "Berlin", "Madrid"],
-      correctAnswer: "Madrid"
+      question: "String values must be enclosed within _____ when being assigned to variables.",
+      choices: ["commas", "curly brackets", "quotes", "parenthesis"],
+      correctAnswer: "quotes"
     },
+    {
+        question: "A very useful tool used during development and debugging for printing content to the debugger is _____ .",
+        choices: ["JavaScript", "terminal/bash", "for loops", "console log"],
+        correctAnswer: "console log"
+      },
   ];
   
   var currentQuestionIndex;
